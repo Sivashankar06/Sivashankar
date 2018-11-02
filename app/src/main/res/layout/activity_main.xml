@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/button_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100px"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/thumpsup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60px"
+            android:src="@drawable/thumpsup"/>
+
+        <ImageView
+            android:id="@+id/thumpsdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:src="@drawable/thumpsdown"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/comments_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_holder"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:inputType="textAutoComplete"
+        android:maxLines="1"
+        android:lines="1"
+        android:imeOptions="actionDone"
+        android:hint="Comments"/>
+
+</RelativeLayout>
